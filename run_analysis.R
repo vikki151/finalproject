@@ -1,3 +1,4 @@
+##final project
 ##1
 library(stringr)
 test_x<-read.table("./UCI HAR Dataset/test/X_test.txt")
