@@ -20,7 +20,7 @@ colnames(data1) <- c(features[measurement,2],"activity","subject")
 
 ##3
 activitylabels<-read.table("./UCI HAR Dataset/activity_labels.txt")
-data1$V <- factor(data1$activity, levels = activitylabels[,1], labels = activitylabels[,2])
+data1$activity <- factor(data1$activity, levels = activitylabels[,1], labels = activitylabels[,2])
 
 ##4
 names(data1)<-gsub("\\(\\)","",names(data1))
